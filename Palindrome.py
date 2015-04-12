@@ -1,10 +1,12 @@
+
+
+
+
+
 palProduct = 0
 palMax = 0
 
-
-
-
-def isPalindrome(number):
+def ifPal(number):
         number = str(number)
         reversed = number[::-1]
         if number==reversed:
@@ -18,10 +20,10 @@ b = 0
 for i in range(100,1000):
         for j in range(100,1000):
                 palProduct = i * j
-                if (isPalindrome(palProduct) and (palMax < palProduct)):
+                if (ifPal(palProduct) and (palMax < palProduct)):
                         palMax = palProduct
                         a = i
                         b = j
 
 
-print "The maximum palindrome that is a product of two %d-digit numbers is [ %d ] made of %d * %d" % (3, palMax, a, b)
+print "The maximum palindrome that is a product of two 3-digit numbers is", palMax, "made from ", a, " * ", b
