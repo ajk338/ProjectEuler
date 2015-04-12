@@ -1,13 +1,13 @@
 palProduct = 0
 palMax = 0
-first=100
 
 
 
-def isPalindrome(n):
-        n = str(n)
-        reversed = n[::-1]
-        if n==reversed:
+
+def isPalindrome(number):
+        number = str(number)
+        reversed = number[::-1]
+        if number==reversed:
                 return True
         else:
                 return False
