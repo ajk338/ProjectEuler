@@ -1,6 +1,8 @@
+
+
 palProduct = 0
 palMax = 0
-num1=100
+
 
 
 
@@ -24,4 +26,4 @@ for i in range(100,1000):
                         b = j
 
 
-print "The maximum palindrome that is a product of two %d-digit numbers is [ %d ] made of %d * %d" % (len(str(num1)), palMax, a, b)
+print "The maximum palindrome that is a product of two 3-digit numbers is", palMax, "made from ", a, " * ", b
